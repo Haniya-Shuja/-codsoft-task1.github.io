@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn{
+        margin-bottom: 50%;
+       margin-left: 60%;
+       border-radius: 1px solid var(--white);
+      }
+    
+      a {
+        position:relative;
+        color: rgb(236, 167, 236);
+        text-decoration: none;
+        text-transform: uppercase;
+     font-size: 1.5rem;
+     letter-spacing: 0.1em;
+     font-weight: 400;
+     padding: 20px 50px;
+     transition:o.5s; 
+     border-radius: 1px solid white;
+    } 
+    
+    a:hover{
+        letter-spacing:0.25em;
+        background: var(--clr);
+        box-shadow: 0 0 35px;
+    
+    }
+    
+    a::before{
+        content: '';
+        position:absolute;
+        inset: 2px;
+    }
+    
+    a span{
+        position: absolute;
+        z-index: 2;
+    width: 60px;
+      }
+    
+    a i{
+        position: absolute;
+        inset:0;
+        display: block;
+    }
+    
+    a i::before{
+        content:'';
+        position:absolute;
+        top:0;
+        left:80%;
+        width: 60%;
+        height:4px;
+        background: #2a201c;
+        transition: 0.5s;
+        transform:translateX(-50%) skewX(325 deg);
+    
+    }
+    
+    a:hover i::before{
+        left: 50%;
+        width: 50px;
+    }
+    
+    a i::after{
+        content:'';
+        position:absolute;
+        bottom:0;
+        left:40%;
+        width: 40%;
+        height:4px;
+        background: #2a201c;
+        border-radius: 1px solid var(--white);
+        transition: 0.5s;
+        transform:translateX(-50%) skewX(325 deg);
+    
+    }
+    a:hover i::after{
+        left: 50%;
+        width: 80px;
+    } 
+</style>
+<body>
+    <h1>Menu and design</h1>
+
+    <div class="btn">
+        <a href="#" class="glow" style="--clr:1e9bff"><span>Sign in</span><i></i></a>
+        </div>
+</body>
+</html>
